@@ -1,0 +1,41 @@
+\section{$k$-Nearest Neighbors [19 Points]}
+
+\begin{enumerate}
+
+        \item \textbf{[6 pts]} In a $k$NN classification problem, assume that the distance measure is not explicitly specified to you. Instead, you are given a “black box” where you input a set of data points $P_1, P_2, \dots P_n$ and an unlabelled data point $Q$, and the black box outputs the nearest neighbor of $Q$, say $P_i$ and its corresponding label $C_i$. Is it possible to construct a $k$NN classification algorithm (w.r.t the unknown distance metrics) based on this black box alone? If so, how and if not, why not?
+        \begin{tcolorbox}[fit,height=7cm, width=0.9\textwidth, blank, borderline={1pt}{-2pt}]
+        %solution 
+        \end{tcolorbox}
+        
+        \item \textbf{[4 pts]} Now suppose the black box returns the $j$ nearest neighbors (and their corresponding labels) instead of the single nearest neighbor (assume $j \neq k$). Is it still possible to construct a $k$NN classification algorithm based on the black box? If so, how and if not, why not? You should separately discuss two scenarios: (1) the returned $k$-nearest neighbors are \emph{ordered/unoredered} based on the unknown distance metrics.  
+
+        \textbf{Note:} The black box operates with a \emph{set} of data points, which assumes they are distinct.
+        \begin{tcolorbox}[fit,height=7cm, width=0.9\textwidth, blank, borderline={1pt}{-2pt}]
+        %solution 
+        \end{tcolorbox}
+        
+\newpage
+        \item \textbf{[3 pts]} Assume we have a dataset with binary labels and we know that the leave-one-out cross validation accuracy (LOOCV) of a $1$-NN classifier on this dataset is $1$. Now suppose that we introduce some noise to the dataset: each label has a 10\% chance of being flipped to the other class. What is the \emph{expected} LOOCV accuracy of a $1$-NN classifier in this setting? Note that the validation accuracy is always calculated with respect to the given ground-truth label, whether it being flipped or not. 
+        
+
+        \begin{tcolorbox}[fit,height=5cm, width=0.9\textwidth, blank,       borderline={1pt}{-2pt}]
+        %solution 
+        \end{tcolorbox}
+
+
+        \item \textbf{[3 pts]} Suppose that in the dataset from the previous question, exactly $10 \%$ of the labels got flipped. What is the \emph{maximum} possible LOOCV accuracy (you can assume any data distribution in your preference)? Justify your answer using a formal proof or by constructing an example. 
+
+        \begin{tcolorbox}[fit,height=3cm, width=0.9\textwidth, blank,       borderline={1pt}{-2pt}]
+        %solution 
+        \end{tcolorbox}
+
+    
+        \item \textbf{[3 pts]} How should the noise level (i.e., the probability of a label being flipped) affect your choice of $k$ for the $k$-NN algorithm, if at all? You do not need to provide a formal proof but you should give a brief justification. \emph{Hint:} think about variance-bias tradeoff in overfitting and underfitting scenarios.  
+
+        \begin{tcolorbox}[fit,height=3cm, width=0.9\textwidth, blank,       borderline={1pt}{-2pt}]
+        %solution 
+        \end{tcolorbox}
+
+
+    \clearpage
+\end{enumerate}

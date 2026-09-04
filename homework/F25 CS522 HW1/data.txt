@@ -1,0 +1,15 @@
+Wakes Up Early,Finished All Homework,Completed Pre-requisited,Likes Coffee,Gets A
+1,1,0,0,0
+1,1,1,0,1
+0,0,1,0,0
+0,1,1,0,1
+0,1,1,0,1
+0,0,1,1,0
+1,0,0,0,0
+0,1,0,1,1
+0,0,1,0,1
+1,0,0,0,0
+1,1,1,0,1
+0,1,1,1,0
+0,0,0,0,0
+1,0,0,1,0
